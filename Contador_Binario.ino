@@ -1,10 +1,11 @@
 #include <math.h>
 
 #define QUANT_BITS 8 //inserir quantidade de bits do contador
-int pin_bit[QUANT_BITS] = {5, 6, 7, 8, 9, 10, 11, 12}; //inserir a porta de saida de cada bit no arduino do menos significante para o mais significante
-int bit_value[QUANT_BITS];
-int num_dec = 1;
-int ct, dv;
+byte pin_bit[QUANT_BITS] = {5, 6, 7, 8, 9, 10, 11, 12}; //inserir a porta de saida de cada bit no arduino do menos significante para o mais significante
+float time = 0.5
+byte bit_value[QUANT_BITS];
+byte num_dec = 1;
+byte ct, dv;
 
 void setup() {
   for(int i = 0; i < QUANT_BITS; i++) {
@@ -48,6 +49,6 @@ void loop() {
     }
   }
   
-  delay(500); //inserir tempo de troca de um numero para outro em milisegundos
+  delay(time * 1000);
   num_dec++;
 }
