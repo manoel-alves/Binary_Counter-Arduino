@@ -17,4 +17,4 @@ Obs.: recomendável utilizar resistores de 150 Ohm (Ω) ou superiores para leds 
 
 ![Esquema de conexões](images/Esquema_de_conexões-reduzido.png)
 
-Feito com [Tinkercad](www.tinkercad.com)
+Feito com [Tinkercad](https://www.tinkercad.com)
