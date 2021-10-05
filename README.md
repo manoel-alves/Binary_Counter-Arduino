@@ -1,20 +1,20 @@
-# **Projeto**: Contador Binário (Arduino)
-Este projeto implementa um *contador binário* que pode ser adaptado para quantos bits o usuário deseja utilizar, sendo necessário apenas alterar uma pequena parte do código (sem precisar se envolver no processo lógico em si) e adaptando a montagem do circuito para a quantidade de bits escolhida.  
+# **Project**: Binary Counter (Arduino)
+This project implements a *binary counter* that can be adapted to how many bits the user wants to use, only being necessary to change a little piece of the code (without having to get involved in the logic process itself) and adapting the circuit assembly to the amount of bits chosen.
 
-## O código:
-A área de alteração está logo no início do código:
-- **Quantidade de bits**: deve ser especificada na constante *QUANT_BITS*.
-   - **Portas dos bits**: no vetor *pin_bit* devem ser especificadas as portas de cada bit do menos significativo (LSB) para o mais significativo (MSB).
-- **Tempo de troca**: A variável *time* recebe o tempo de troca de um número para outro, em segundos. 
+## The code:
+The area to be adapted is right at the beginning of the code:
+- **Bits Amount**: can be specified at the const *QUANT_BITS*.
+   - **Bits Ports**: Specify the ports where the Leds are connected by the vector * pin_bit *, from the least significant bit (LSB) to the most significant bit (MSB).
+- **Increment Time**: The *time* variable receives the time to switch from one number to another, in seconds. 
 ~~~
 #define QUANT_BITS 8 
 byte pin_bit[QUANT_BITS] = {5, 6, 7, 8, 9, 10, 11, 12}; 
 float time = 0.5
 ~~~
 
-## Esquema de Conexões:
-Obs.: recomendável utilizar resistores de 150 Ohm (Ω) ou superiores para leds comuns!
+## Connection Scheme:
+Obs.: recommended to use resistors of 150 Ohm (Ω) or higher for common LEDs!
 
-![Esquema de conexões](images/Esquema_de_conexões-reduzido.png)
+![Connection Scheme](images/Esquema_de_conexões-reduzido.png)
 
-Feito com [Tinkercad](https://www.tinkercad.com)
+Made in [Tinkercad](https://www.tinkercad.com)
